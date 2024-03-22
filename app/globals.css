@@ -8,13 +8,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "MyCustomFont";
-  src: url("../public/fonts/BiroScriptUSPlus-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
 }
 
@@ -27,8 +20,9 @@ body {
     @apply px-2 md:px-4;
   }
   .padding-container {
-    @apply px-16 md:px-[72px] xl:px-[120px];
+    @apply px-16 md:px-[72px] xl:px-[195px];
   }
+
   .padding-header {
     @apply px-2 md:px-3 xl:px-[96px];
   }
@@ -44,31 +38,67 @@ body {
 
   /* FONTS */
 
+  .extrabold-164 {
+    @apply text-[164px] font-[900] leading-[100%]  uppercase;
+  }
   .extrabold-160 {
-    @apply text-[160px] font-[900] leading-[100%];
+    @apply text-[160px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-120 {
+    @apply text-[120px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-92 {
+    @apply text-[92px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-80 {
+    @apply text-[80px] font-[900] leading-[100%]  uppercase;
   }
   .extrabold-64 {
-    @apply text-[64px] font-[900] leading-[100%];
+    @apply text-[64px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-60 {
+    @apply text-[60px] font-[900] leading-[100%]  uppercase;
   }
   .extrabold-44 {
-    @apply text-[44px] font-[900] leading-[100%];
+    @apply text-[44px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-44-91 {
+    @apply text-[44px] font-[900] leading-[91%] uppercase;
+  }
+  .extrabold-40 {
+    @apply text-[40px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-36 {
+    @apply text-[36px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-32 {
+    @apply text-[32px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-20 {
+    @apply text-[20px] font-[900] leading-[100%]  uppercase;
+  }
+  .extrabold-16 {
+    @apply text-[16px] font-[900] leading-[119%]  uppercase;
+  }
+  .extrabold-28 {
+    @apply text-[28px] font-[900] leading-[121%]  uppercase;
   }
   .bold-24 {
-    @apply text-[24px] font-[600] leading-[121%];
+    @apply text-[24px] font-[600] leading-[121%]  uppercase;
   }
   .bold-16 {
-    @apply text-[16px] font-[600] leading-[119%];
+    @apply text-[16px] font-[600] leading-[119%]  uppercase;
   }
   .bold-12 {
-    @apply text-[12px] font-[600] leading-[117%];
+    @apply text-[12px] font-[600] leading-[117%]  uppercase;
   }
   .regular-24 {
-    @apply text-[24px] font-[400] leading-[121%];
+    @apply text-[24px] font-[400] leading-[121%]  uppercase;
   }
   .regular-16 {
-    @apply text-[16px] font-[400] leading-[119%];
+    @apply text-[16px] font-[400] leading-[119%]  uppercase;
   }
   .regular-12 {
-    @apply text-[12px] font-[400] leading-[117%];
+    @apply text-[12px] font-[400] leading-[117%]  uppercase;
   }
 }

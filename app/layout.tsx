@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${biro.variable} ${messina.variable} ${grotesk.variable} bg-main text-textBlack`}
+        className={`${biro.variable} ${messina.variable} ${grotesk.variable} bg-main text-textBlack max-container`}
       >
         <Header />
-        <main className="relative overflow-hidden max-container padding-wrapper mt-[54px] xl:mt-[16px]">
+        <main className="relative overflow-hidden padding-wrapper mt-[54px] xl:mt-[16px]">
           {children}
         </main>
         <Footer />

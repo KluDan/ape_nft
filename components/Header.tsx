@@ -3,7 +3,7 @@ import { NAV_LINKS } from "@/constants";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Logo, LogoDiscord, LogoMark, LogoX } from "@/public/icons";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import LogoLink from "./LogoLink";
 import Menu from "./Menu";
 
@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="padding-wrapper fixed top-[62px] md:top-[66px] xl:top-[40px] z-20 w-full px-3">
+      <header className="padding-wrapper fixed top-[62px] md:top-[66px] xl:top-[40px] z-20 px-3 w-full max-w-[1440px]">
         <nav className="padding-header flex w-full justify-between items-center z-100">
           <Link href="/">
             <Logo
@@ -48,9 +48,9 @@ const Header = () => {
                 {isMenuOpen ? "close" : "menu"}
               </button>
               {!isSmallScreen && isMenuOpen && (
-                <ul className="flex gap-[10px] xl:gap-[39px] justify-center items-center h-auto leading-none">
+                <ul className="flex gap-[10px] md:gap-[16px] xl:gap-[39px] justify-center items-center h-auto leading-none">
                   {NAV_LINKS.map((link) => (
-                    <li>
+                    <li key={link.label}>
                       <Link
                         href={link.href}
                         className="text-textBlack uppercase transition hover:text-white hover:underline"
